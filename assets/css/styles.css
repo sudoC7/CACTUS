@@ -381,9 +381,51 @@ home__title span{
   font-weight: var(--font-semi-bold);
 }
 
+.shop__button{
+  position: absolute;
+  right: .75rem;
+  bottom: 0.75rem;
+  outline: none;
+  border: none;
+  background-color: var(--white-color);
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  display: grid;
+  cursor: pointer;
+}
+
+.shop__card:hover .shop__img{
+  transform: translateY(-.5rem);
+}
 
 /*=============== CARE ===============*/
+.care__container{
+  padding-top: 2rem;
+  row-gap: 2rem;
+}
 
+.care__img{
+  width: 270px;
+  filter: drop-shadow(--shadow-img);
+  justify-self: center;
+}
+
+.care__list{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.care__item{
+  display: flex;
+  column-gap: .5rem;
+  align-items: flex-start;
+}
+
+.care__item i{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
 
 /*=============== CONTACT ===============*/
 
