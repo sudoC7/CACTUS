@@ -22,12 +22,20 @@ const navLink = document.querySelectorAll('.nav_link')
 
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
-
+    // When me click on each nav__link, we remove the sho-menu click 
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== ADD BLUR HEADER ===============*/
+
+const blurHeader = () =>{
+    const header = document.getElementById('header')
+    //Add a class if the bottom offset is greater than 50 of the 
+    this.scrollY >= 50 ? header.classList.add('blur-header')
+                       : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
